@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -44,11 +45,15 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 flex items-center">
-              <span className={`text-2xl font-bold transition-colors duration-300 ${
-                scrolled ? 'text-purple-700' : 'text-white'
-              }`}>
-                Trip Tour
-              </span>
+              <div className="relative h-16 w-16">
+                <Image 
+                  src="/tripin.png" 
+                  alt="Trip Tour Logo" 
+                  fill
+                  className="object-contain -rotate-90"
+                  priority
+                />
+              </div>
             </Link>
           </div>
 

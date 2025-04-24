@@ -45,7 +45,19 @@
     "tashkent": "Toshkent turlari",
     "valley": "Vodiy turlari",
     "khorezm": "Xorazm turlari",
-    "viewAll": "Barcha turlarni ko'rish"
+    "viewAll": "Barcha turlarni ko'rish",
+    "viewDetails": "Batafsil ma'lumot",
+    "tashkentCityTour": "Toshkent shahri turi",
+    "ferganaValleyExploration": "Farg'ona vodiysi sayohati",
+    "ancientKhorezm": "Qadimiy Xorazm",
+    "oneDay": "1 kun",
+    "threeDays": "3 kun",
+    "fourDays": "4 kun",
+    "twoToFifteen": "2-15 kishi",
+    "twoToTen": "2-10 kishi",
+    "twoToTwelve": "2-12 kishi",
+    "ferganaAndijanNamangan": "Farg'ona, Andijon, Namangan",
+    "khivaUrgench": "Xiva, Urganch"
   },
   "map": {
     "title": "Xaritada mashhur joylar",

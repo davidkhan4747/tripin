@@ -45,7 +45,19 @@
     "tashkent": "Туры по Ташкенту",
     "valley": "Туры по Ферганской долине",
     "khorezm": "Туры по Хорезму",
-    "viewAll": "Посмотреть все туры"
+    "viewAll": "Посмотреть все туры",
+    "viewDetails": "Подробнее",
+    "tashkentCityTour": "Тур по Ташкенту",
+    "ferganaValleyExploration": "Исследование Ферганской долины",
+    "ancientKhorezm": "Древний Хорезм",
+    "oneDay": "1 день",
+    "threeDays": "3 дня",
+    "fourDays": "4 дня",
+    "twoToFifteen": "2-15 человек",
+    "twoToTen": "2-10 человек",
+    "twoToTwelve": "2-12 человек",
+    "ferganaAndijanNamangan": "Фергана, Андижан, Наманган",
+    "khivaUrgench": "Хива, Ургенч"
   },
   "map": {
     "title": "Популярные локации на карте",

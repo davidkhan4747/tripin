@@ -45,7 +45,19 @@
     "tashkent": "Tashkent Tours",
     "valley": "Fergana Valley Tours",
     "khorezm": "Khorezm Tours",
-    "viewAll": "View All Tours"
+    "viewAll": "View All Tours",
+    "viewDetails": "View Details",
+    "tashkentCityTour": "Tashkent City Tour",
+    "ferganaValleyExploration": "Fergana Valley Exploration",
+    "ancientKhorezm": "Ancient Khorezm",
+    "oneDay": "1 day",
+    "threeDays": "3 days",
+    "fourDays": "4 days",
+    "twoToFifteen": "2-15 people",
+    "twoToTen": "2-10 people",
+    "twoToTwelve": "2-12 people",
+    "ferganaAndijanNamangan": "Fergana, Andijan, Namangan",
+    "khivaUrgench": "Khiva, Urgench"
   },
   "map": {
     "title": "Popular Locations on Map",
