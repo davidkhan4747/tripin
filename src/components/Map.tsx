@@ -9,7 +9,7 @@ import L from 'leaflet';
 const MarkerIcon = () => {
   useEffect(() => {
     (async function init() {
-      // @ts-ignore
+      // @ts-expect-error - Leaflet's Icon.Default has incomplete typings
       delete L.Icon.Default.prototype._getIconUrl;
       L.Icon.Default.mergeOptions({
         iconRetinaUrl: '/images/marker-icon-2x.png',

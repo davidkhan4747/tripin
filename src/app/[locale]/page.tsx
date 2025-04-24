@@ -8,7 +8,6 @@ import LocationMap from '@/components/LocationMap';
 import Navbar from '@/components/Navbar';
 import TopRoutes from '@/components/TopRoutes';
 import Tours from '@/components/Tours';
-import { useTranslations } from 'next-intl';
 
 export default function Home() {
   return (

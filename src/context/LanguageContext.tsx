@@ -5,17 +5,21 @@ import { createContext, useContext, useEffect, useState, ReactNode } from 'react
 
 type Language = 'en' | 'ru' | 'uz';
 
+interface TranslationValue {
+  [key: string]: string | TranslationValue;
+}
+
 type LanguageContextType = {
   language: Language;
   setLanguage: (lang: Language) => void;
-  translations: Record<string, any>;
+  translations: Record<string, TranslationValue>;
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguageState] = useState<Language>('uz');
-  const [translations, setTranslations] = useState<Record<string, any>>({});
+  const [translations, setTranslations] = useState<Record<string, TranslationValue>>({});
 
   // Load translations based on the current language
   useEffect(() => {
@@ -67,24 +71,24 @@ export function useTranslate(section: string) {
   return {
     t: (key: string) => {
       const keys = key.split('.');
-      let value = translations[section];
+      let value = translations[section] as TranslationValue | undefined;
       
       for (const k of keys) {
         if (!value) return key;
-        value = value[k];
+        value = value[k] as TranslationValue;
       }
       
-      return value || key;
+      return (typeof value === 'string' ? value : key);
     },
     raw: (key?: string) => {
       if (!key) return translations[section] || {};
       
       const keys = key.split('.');
-      let value = translations[section];
+      let value = translations[section] as TranslationValue | undefined;
       
       for (const k of keys) {
         if (!value) return {};
-        value = value[k];
+        value = value[k] as TranslationValue;
       }
       
       return value || {};

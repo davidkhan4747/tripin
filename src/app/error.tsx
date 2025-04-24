@@ -2,7 +2,6 @@
 
 import { useEffect } from 'react';
 import Link from 'next/link';
-import { useTranslate } from '@/context/LanguageContext';
 
 export default function Error({
   error,
