@@ -8,7 +8,7 @@
     "contact": "Kontaktlar"
   },
   "hero": {
-    "title": "O'zbekistonni sayohat qiling",
+    "title": "O'zbekiston ichi sayohat qiling",
     "subtitle": "O'zbekistonning mashhur joylari",
     "places": {
       "tashkent": "Toshkent",
@@ -43,21 +43,35 @@
   "tours": {
     "title": "Bizning turlarimiz",
     "tashkent": "Toshkent turlari",
-    "valley": "Vodiy turlari",
+    "samarkand": "Samarqand turlari",
     "khorezm": "Xorazm turlari",
     "viewAll": "Barcha turlarni ko'rish",
     "viewDetails": "Batafsil ma'lumot",
     "tashkentCityTour": "Toshkent shahri turi",
-    "ferganaValleyExploration": "Farg'ona vodiysi sayohati",
+    "samarkandHistoricalTour": "Samarqand tarixiy turi",
     "ancientKhorezm": "Qadimiy Xorazm",
+    "bukharaSilkRoad": "Buxoro Ipak yo'li sayohati",
+    "uzbekistanHighlights": "O'zbekiston diqqatga sazovor joylari",
+    "adventureUzbekistan": "O'zbekiston sarguzashtlari",
     "oneDay": "1 kun",
+    "twoDays": "2 kun",
     "threeDays": "3 kun",
     "fourDays": "4 kun",
+    "sevenDays": "7 kun",
+    "tenDays": "10 kun",
     "twoToFifteen": "2-15 kishi",
     "twoToTen": "2-10 kishi",
     "twoToTwelve": "2-12 kishi",
-    "ferganaAndijanNamangan": "Farg'ona, Andijon, Namangan",
-    "khivaUrgench": "Xiva, Urganch"
+    "fourToTwenty": "4-20 kishi",
+    "sixToFifteen": "6-15 kishi",
+    "tashkent": "Toshkent",
+    "samarkand": "Samarqand",
+    "khivaUrgench": "Xiva, Urganch",
+    "bukhara": "Buxoro",
+    "majorCities": "O'zbekistonning asosiy shaharlari",
+    "mixedLocations": "Turli joylar",
+    "bookNow": "Hozir band qilish",
+    "viewAllTours": "Barcha turlarni ko'rish"
   },
   "map": {
     "title": "Xaritada mashhur joylar",

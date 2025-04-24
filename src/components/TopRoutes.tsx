@@ -16,7 +16,7 @@ export default function TopRoutes() {
   const cities: Record<string, CityInfo> = {
     samarkand: {
       name: t('cities.samarkand'),
-      image: '/images/samarkand.jpg',
+      image: '/images/samarqand.jpg',
       slug: 'samarkand'
     },
     bukhara: {
@@ -26,7 +26,7 @@ export default function TopRoutes() {
     },
     khiva: {
       name: t('cities.khiva'),
-      image: '/images/khiva.jpg',
+      image: '/images/xiva.jpg',
       slug: 'khiva'
     },
     tashkent: {
@@ -36,42 +36,22 @@ export default function TopRoutes() {
     },
     shahrisabz: {
       name: t('cities.shahrisabz'),
-      image: '/images/shahrisabz.jpg',
+      image: '/images/shaxrisabz.jpg',
       slug: 'shahrisabz'
     },
     karshi: {
       name: t('cities.karshi'),
-      image: '/images/karshi.jpg',
+      image: '/images/qarshi.jpg',
       slug: 'karshi'
     },
     termez: {
       name: t('cities.termez'),
-      image: '/images/termez.jpg',
+      image: '/images/termiz.jpg',
       slug: 'termez'
-    },
-    andijan: {
-      name: t('cities.andijan'),
-      image: '/images/andijan.jpg',
-      slug: 'andijan'
-    },
-    namangan: {
-      name: t('cities.namangan'),
-      image: '/images/namangan.jpg',
-      slug: 'namangan'
-    },
-    fergana: {
-      name: t('cities.fergana'),
-      image: '/images/fergana.jpg',
-      slug: 'fergana'
-    },
-    nurata: {
-      name: t('cities.nurata'),
-      image: '/images/nurata.jpg',
-      slug: 'nurata'
     },
     moynaq: {
       name: t('cities.moynaq'),
-      image: '/images/moynaq.jpg',
+      image: '/images/maynoq.jpg',
       slug: 'moynaq'
     }
   };

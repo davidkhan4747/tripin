@@ -22,25 +22,25 @@ export default function Tours() {
     {
       id: 'tashkent-1',
       title: t('tashkentCityTour'),
-      image: '/images/tashkent-tour.jpg',
+      image: '/images/tashkent.jpg',
       duration: t('oneDay'),
       groupSize: t('twoToFifteen'),
       location: t('tashkent'),
       category: 'tashkent'
     },
     {
-      id: 'valley-1',
-      title: t('ferganaValleyExploration'),
-      image: '/images/fergana-tour.jpg',
-      duration: t('threeDays'),
-      groupSize: t('twoToTen'),
-      location: t('ferganaAndijanNamangan'),
-      category: 'valley'
+      id: 'samarkand-1',
+      title: t('samarkandHistoricalTour'),
+      image: '/images/samarqand.jpg',
+      duration: t('twoDays'),
+      groupSize: t('twoToTwelve'),
+      location: t('samarkand'),
+      category: 'samarkand'
     },
     {
       id: 'khorezm-1',
       title: t('ancientKhorezm'),
-      image: '/images/khorezm-tour.jpg',
+      image: '/images/xiva.jpg',
       duration: t('fourDays'),
       groupSize: t('twoToTwelve'),
       location: t('khivaUrgench'),
@@ -51,7 +51,7 @@ export default function Tours() {
   const categories = [
     { id: 'all', label: t('viewAll') },
     { id: 'tashkent', label: t('tashkent') },
-    { id: 'valley', label: t('valley') },
+    { id: 'samarkand', label: t('samarkand') },
     { id: 'khorezm', label: t('khorezm') }
   ];
 

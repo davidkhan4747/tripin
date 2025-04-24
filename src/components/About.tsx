@@ -20,7 +20,7 @@ export default function About() {
           >
             <div className="aspect-w-4 aspect-h-3 relative h-[500px]">
               <Image
-                src="/images/about-image.jpg"
+                src="/images/about.jpg"
                 alt="About Trip Tour"
                 fill
                 className="object-cover rounded-2xl"
