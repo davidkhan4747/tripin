@@ -1,0 +1,68 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "routes": "Top Routes",
+    "tours": "Our Tours",
+    "map": "Map",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Discover Uzbekistan",
+    "subtitle": "Famous Places of Uzbekistan",
+    "places": {
+      "tashkent": "Tashkent",
+      "bukhara": "Bukhara",
+      "samarkand": "Samarkand",
+      "khiva": "Khiva"
+    },
+    "cta": "Explore Now"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Trip Tour travel agency started its activity in 2021 and today has more than 20 branches. Our founders are Mirsalimova Azizakhon and Saydullaeva Malikakhon. Under the leadership of the directors, Trip Tour offers various travel opportunities."
+  },
+  "routes": {
+    "title": "Top Routes",
+    "cities": {
+      "samarkand": "Samarkand",
+      "bukhara": "Bukhara",
+      "khiva": "Khiva",
+      "tashkent": "Tashkent",
+      "shahrisabz": "Shahrisabz",
+      "karshi": "Karshi",
+      "termez": "Termez",
+      "andijan": "Andijan",
+      "namangan": "Namangan",
+      "fergana": "Fergana",
+      "nurata": "Nurata",
+      "moynaq": "Moynaq (Karakalpakstan)"
+    },
+    "viewDetails": "View Details"
+  },
+  "tours": {
+    "title": "Our Tours",
+    "tashkent": "Tashkent Tours",
+    "valley": "Fergana Valley Tours",
+    "khorezm": "Khorezm Tours",
+    "viewAll": "View All Tours"
+  },
+  "map": {
+    "title": "Popular Locations on Map",
+    "description": "Explore the most famous destinations in Uzbekistan"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "address": "Address",
+    "phone": "Phone",
+    "email_label": "Email"
+  },
+  "footer": {
+    "rights": "All Rights Reserved",
+    "company": "Trip Tour"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "navigation": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "routes": "Eng mashhur yo'nalishlar",
+    "tours": "Bizning turlarimiz",
+    "map": "Xarita",
+    "contact": "Kontaktlar"
+  },
+  "hero": {
+    "title": "O'zbekistonni kashf eting",
+    "subtitle": "O'zbekistonning mashhur joylari",
+    "places": {
+      "tashkent": "Toshkent",
+      "bukhara": "Buxoro",
+      "samarkand": "Samarqand",
+      "khiva": "Xiva"
+    },
+    "cta": "Hozir o'rganish"
+  },
+  "about": {
+    "title": "Biz haqimizda",
+    "description": "Trip Tour sayyohlik agentligi o'z faoliyatini 2021 yilda boshlagan va bugungi kunda 20 dan ortiq filiallariga ega. Ta'sischilarimiz Mirsalimova Azizaxon va Saydullaeva Malikaxon. Direktorlar rahbarligida Trip Tour turli sayohat imkoniyatlarini taqdim etadi."
+  },
+  "routes": {
+    "title": "Eng mashhur yo'nalishlar",
+    "cities": {
+      "samarkand": "Samarqand",
+      "bukhara": "Buxoro",
+      "khiva": "Xiva",
+      "tashkent": "Toshkent",
+      "shahrisabz": "Shahrisabz",
+      "karshi": "Qarshi",
+      "termez": "Termiz",
+      "andijan": "Andijon",
+      "namangan": "Namangan",
+      "fergana": "Farg'ona",
+      "nurata": "Nurota",
+      "moynaq": "Mo'ynoq (Qoraqalpog'iston)"
+    },
+    "viewDetails": "Batafsil ma'lumot"
+  },
+  "tours": {
+    "title": "Bizning turlarimiz",
+    "tashkent": "Toshkent turlari",
+    "valley": "Vodiy turlari",
+    "khorezm": "Xorazm turlari",
+    "viewAll": "Barcha turlarni ko'rish"
+  },
+  "map": {
+    "title": "Xaritada mashhur joylar",
+    "description": "O'zbekistondagi eng mashhur joylarni o'rganing"
+  },
+  "contact": {
+    "title": "Biz bilan bog'laning",
+    "name": "Ism",
+    "email": "Elektron pochta",
+    "message": "Xabar",
+    "send": "Xabar yuborish",
+    "address": "Manzil",
+    "phone": "Telefon",
+    "email_label": "Elektron pochta"
+  },
+  "footer": {
+    "rights": "Barcha huquqlar himoyalangan",
+    "company": "Trip Tour"
+  }
+}
