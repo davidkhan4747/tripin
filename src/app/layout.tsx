@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
+import Preloader from "@/components/Preloader";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -11,6 +12,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Trip Tour - Discover Uzbekistan",
   description: "Explore the beautiful destinations of Uzbekistan with Trip Tour",
+  icons: {
+    icon: '/favicon.ico'
+  }
 };
 
 export default function RootLayout({
@@ -22,7 +26,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <LanguageProvider>
-          {children}
+          <Preloader />
+          <main className="relative">
+            {children}
+          </main>
         </LanguageProvider>
       </body>
     </html>

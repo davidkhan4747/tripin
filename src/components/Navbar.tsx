@@ -45,12 +45,14 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 flex items-center">
-              <div className="relative h-16 w-16">
+              <div className="relative h-20 w-20">
                 <Image 
                   src="/tripin.png" 
                   alt="Trip Tour Logo" 
                   fill
-                  className="object-contain -rotate-90"
+                  className={`object-contain transition-all duration-300 ${
+                    scrolled ? 'brightness-100 -rotate-90' : 'brightness-200 -rotate-90'
+                  }`}
                   priority
                 />
               </div>

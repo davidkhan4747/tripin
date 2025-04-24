@@ -16,6 +16,13 @@ const Map = dynamic(() => import('@/components/Map'), {
   ),
 });
 
+// Define the Location type to match the one in Map.tsx
+type Location = {
+  name: string;
+  coordinates: [number, number]; // Tuple type with exactly 2 numbers
+  description: string;
+};
+
 export default function LocationMap() {
   const { t } = useTranslate('map');
   const [isMounted, setIsMounted] = useState(false);
@@ -24,30 +31,30 @@ export default function LocationMap() {
     setIsMounted(true);
   }, []);
 
-  const locations = [
+  const locations: Location[] = [
     {
       name: 'Tashkent',
-      coordinates: [41.2995, 69.2401],
+      coordinates: [41.2995, 69.2401] as [number, number],
       description: 'The capital city of Uzbekistan'
     },
     {
       name: 'Samarkand',
-      coordinates: [39.6542, 66.9597],
+      coordinates: [39.6542, 66.9597] as [number, number],
       description: 'Historic city known for Registan Square'
     },
     {
       name: 'Bukhara',
-      coordinates: [39.7747, 64.4286],
+      coordinates: [39.7747, 64.4286] as [number, number],
       description: 'Ancient city with well-preserved architecture'
     },
     {
       name: 'Khiva',
-      coordinates: [41.3775, 60.3636],
+      coordinates: [41.3775, 60.3636] as [number, number],
       description: 'Walled inner city with traditional buildings'
     },
     {
       name: 'Fergana',
-      coordinates: [40.3883, 71.7819],
+      coordinates: [40.3883, 71.7819] as [number, number],
       description: 'City in the fertile Fergana Valley'
     }
   ];
