@@ -49,7 +49,7 @@ export default function Contact() {
       setTimeout(() => {
         setSubmitSuccess(false);
       }, 5000);
-    } catch (error) {
+    } catch (_) {
       setSubmitError(t('submitError'));
     } finally {
       setIsSubmitting(false);
@@ -179,7 +179,7 @@ export default function Contact() {
                 </div>
                 <div className="ml-3">
                   <p className="text-gray-700 font-medium">{t('address')}</p>
-                  <p className="text-gray-600">Buyuk Ipak Yo'li 48, Tashkent, Uzbekistan</p>
+                  <p className="text-gray-600">Buyuk Ipak Yo&apos;li 48, Tashkent, Uzbekistan</p>
                 </div>
               </div>
               

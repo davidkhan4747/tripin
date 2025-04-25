@@ -3,15 +3,15 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useTranslate } from '@/context/LanguageContext';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 
 export default function Hero() {
   const { t, raw } = useTranslate('hero');
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set([0]));
   
-  // Define the images for the slider
-  const images = [
+  // Define the images for the slider using useMemo to prevent re-creation on each render
+  const images = useMemo(() => [
     {
       src: '/images/TAShkent.jpg',
       alt: 'Tashkent, Uzbekistan'
@@ -32,7 +32,7 @@ export default function Hero() {
       src: '/images/xiva2.jpg',
       alt: 'Khiva Old City, Uzbekistan'
     }
-  ];
+  ], []);
 
   // Preload next image
   useEffect(() => {

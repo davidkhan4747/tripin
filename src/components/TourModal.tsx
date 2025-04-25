@@ -55,7 +55,7 @@ export default function TourModal({ isOpen, onClose, tourName }: TourModalProps)
         onClose();
         setSubmitSuccess(false);
       }, 3000);
-    } catch (error) {
+    } catch (_) {
       setSubmitError(t('submitError'));
     } finally {
       setIsSubmitting(false);
