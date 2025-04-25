@@ -85,7 +85,22 @@
     "send": "Xabar yuborish",
     "address": "Manzil",
     "phone": "Telefon",
-    "email_label": "Elektron pochta"
+    "email_label": "Elektron pochta",
+    "submitting": "Yuborilmoqda...",
+    "submitError": "Xabarni yuborib bo'lmadi. Iltimos, qayta urinib ko'ring.",
+    "successTitle": "Xabar yuborildi!",
+    "successMessage": "Murojaat uchun rahmat. Tez orada siz bilan bog'lanamiz."
+  },
+  "tourModal": {
+    "title": "Tur uchun ariza",
+    "name": "Ismingiz",
+    "phone": "Telefon raqami",
+    "email": "Elektron pochta (ixtiyoriy)",
+    "submit": "Arizani yuborish",
+    "submitting": "Yuborilmoqda...",
+    "submitError": "Arizani yuborib bo'lmadi. Iltimos, qayta urinib ko'ring.",
+    "successTitle": "Ariza yuborildi!",
+    "successMessage": "Bizning turimizga qiziqish bildirganingiz uchun rahmat. Jamoamiz tez orada siz bilan bog'lanadi."
   },
   "footer": {
     "rights": "Barcha huquqlar himoyalangan",
