@@ -37,7 +37,9 @@ export default function Contact() {
       });
       
       if (!response.ok) {
-        throw new Error(t('submitError'));
+        setSubmitError(t('submitError'));
+        setIsSubmitting(false);
+        return;
       }
 
       setSubmitSuccess(true);
@@ -49,7 +51,7 @@ export default function Contact() {
       setTimeout(() => {
         setSubmitSuccess(false);
       }, 5000);
-    } catch (_) {
+    } catch {
       setSubmitError(t('submitError'));
     } finally {
       setIsSubmitting(false);
