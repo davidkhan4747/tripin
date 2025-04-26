@@ -113,9 +113,9 @@ export default function TopRoutes() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
                 <h3 className="text-xl font-bold mb-2">{city.name}</h3>
-                <button className="text-sm bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded-full transition-all duration-200">
-                  {t('viewDetails')}
-                </button>
+                {/*<button className="text-sm bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded-full transition-all duration-200">*/}
+                {/*  {t('viewDetails')}*/}
+                {/*</button>*/}
               </div>
             </motion.div>
           ))}
