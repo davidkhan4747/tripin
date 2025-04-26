@@ -20,7 +20,13 @@
   },
   "about": {
     "title": "About Us",
-    "description": "Trip Tour travel agency started its activity in 2021 and today has more than 20 branches. Our founders are Mirsalimova Azizakhon and Saydullaeva Malikakhon. Under the leadership of the directors, Trip Tour offers various travel opportunities."
+    "description": "Trip Tour travel agency started its activity in 2021 and today has more than 20 branches. Our founders are Mirsalimova Azizakhon and Saydullaeva Malikakhon. Under the leadership of the directors, Trip Tour offers various travel opportunities.",
+    "stats": {
+      "branches": "Branches",
+      "tourists": "Happy Tourists",
+      "destinations": "Destinations",
+      "support": "Support"
+    }
   },
   "routes": {
     "title": "Top Routes",
@@ -104,6 +110,12 @@
   },
   "footer": {
     "rights": "All Rights Reserved",
-    "company": "Trip Tour"
+    "company": "Trip Tour",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "address": "Buyuk Ipak Yo'li 48, Tashkent, Uzbekistan",
+    "phone": "+998 90 419 77 88",
+    "phone2": "+998 90 063 77 88",
+    "email": "tripincome.uz@gmail.com"
   }
 }

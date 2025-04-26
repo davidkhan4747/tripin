@@ -20,7 +20,13 @@
   },
   "about": {
     "title": "Biz haqimizda",
-    "description": "Trip Tour sayyohlik agentligi o'z faoliyatini 2021 yilda boshlagan va bugungi kunda 20 dan ortiq filiallariga ega. Ta'sischilarimiz Mirsalimova Azizaxon va Saydullaeva Malikaxon. Direktorlar rahbarligida Trip Tour turli sayohat imkoniyatlarini taqdim etadi."
+    "description": "Trip Tour sayyohlik agentligi o'z faoliyatini 2021 yilda boshlagan va bugungi kunda 20 dan ortiq filiallariga ega. Ta'sischilarimiz Mirsalimova Azizaxon va Saydullaeva Malikaxon. Direktorlar rahbarligida Trip Tour turli sayohat imkoniyatlarini taqdim etadi.",
+    "stats": {
+      "branches": "Filiallar",
+      "tourists": "Mamnun sayyohlar",
+      "destinations": "Yo'nalishlar",
+      "support": "Qo'llab-quvvatlash"
+    }
   },
   "routes": {
     "title": "Eng mashhur yo'nalishlar",
@@ -104,6 +110,12 @@
   },
   "footer": {
     "rights": "Barcha huquqlar himoyalangan",
-    "company": "Trip Tour"
+    "company": "Trip Tour",
+    "quickLinks": "Tezkor havolalar",
+    "contact": "Kontaktlar",
+    "address": "Buyuk Ipak Yo'li 48, Toshkent, O'zbekiston",
+    "phone": "+998 90 419 77 88",
+    "phone2": "+998 90 063 77 88",
+    "email": "tripincome.uz@gmail.com"
   }
 }

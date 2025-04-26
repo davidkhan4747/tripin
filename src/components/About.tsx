@@ -52,19 +52,19 @@ export default function About() {
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-gray-50 p-5 rounded-xl border border-gray-100">
                 <div className="text-purple-700 text-2xl font-bold mb-1">20+</div>
-                <div className="text-gray-600">Branches</div>
+                <div className="text-gray-600">{t('stats.branches')}</div>
               </div>
               <div className="bg-gray-50 p-5 rounded-xl border border-gray-100">
                 <div className="text-purple-700 text-2xl font-bold mb-1">1000+</div>
-                <div className="text-gray-600">Happy Tourists</div>
+                <div className="text-gray-600">{t('stats.tourists')}</div>
               </div>
               <div className="bg-gray-50 p-5 rounded-xl border border-gray-100">
                 <div className="text-purple-700 text-2xl font-bold mb-1">50+</div>
-                <div className="text-gray-600">Destinations</div>
+                <div className="text-gray-600">{t('stats.destinations')}</div>
               </div>
               <div className="bg-gray-50 p-5 rounded-xl border border-gray-100">
                 <div className="text-purple-700 text-2xl font-bold mb-1">24/7</div>
-                <div className="text-gray-600">Support</div>
+                <div className="text-gray-600">{t('stats.support')}</div>
               </div>
             </div>
           </motion.div>

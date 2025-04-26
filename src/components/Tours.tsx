@@ -137,7 +137,7 @@ export default function Tours() {
                   onClick={() => openModal(tour)}
                   className="w-full py-2 bg-[#672c8e] hover:bg-[#7a3ebd] text-white rounded-md transition-colors duration-200"
                 >
-                  {t('viewDetails')}
+                  {t('bookNow')}
                 </button>
               </div>
             </motion.div>
