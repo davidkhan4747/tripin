@@ -39,9 +39,16 @@ export default function Hero() {
     const nextIndex = (currentImageIndex + 1) % images.length;
     if (!loadedImages.has(nextIndex)) {
       const img = new window.Image();
-      img.src = images[nextIndex].src;
-      img.onload = () => {
+      
+      const onLoad = () => {
         setLoadedImages(prev => new Set([...prev, nextIndex]));
+      };
+      
+      img.addEventListener('load', onLoad);
+      img.src = images[nextIndex].src;
+      
+      return () => {
+        img.removeEventListener('load', onLoad);
       };
     }
   }, [currentImageIndex, images, loadedImages]);

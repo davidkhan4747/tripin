@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import 'leaflet/dist/leaflet.css';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
@@ -8,15 +8,13 @@ import L from 'leaflet';
 // Fix for Leaflet marker icons in Next.js
 const MarkerIcon = () => {
   useEffect(() => {
-    (async function init() {
-      // @ts-expect-error - Leaflet's Icon.Default has incomplete typings
-      delete L.Icon.Default.prototype._getIconUrl;
-      L.Icon.Default.mergeOptions({
-        iconRetinaUrl: '/images/marker-icon-2x.png',
-        iconUrl: '/images/marker-icon.png',
-        shadowUrl: '/images/marker-shadow.png',
-      });
-    })();
+    // @ts-expect-error - Leaflet's Icon.Default has incomplete typings
+    delete L.Icon.Default.prototype._getIconUrl;
+    L.Icon.Default.mergeOptions({
+      iconRetinaUrl: '/images/marker-icon-2x.png',
+      iconUrl: '/images/marker-icon.png',
+      shadowUrl: '/images/marker-shadow.png',
+    });
   }, []);
 
   return null;
@@ -33,6 +31,17 @@ type MapProps = {
 };
 
 export default function Map({ locations }: MapProps) {
+  // Create icon once and reuse it
+  const defaultIcon = useMemo(() => new L.Icon({
+    iconUrl: '/images/marker-icon.png',
+    iconRetinaUrl: '/images/marker-icon-2x.png',
+    shadowUrl: '/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+  }), []);
+  
   return (
     <MapContainer 
       center={[41.3775, 64.5853]} 
@@ -49,15 +58,7 @@ export default function Map({ locations }: MapProps) {
         <Marker 
           key={location.name} 
           position={location.coordinates}
-          icon={new L.Icon({
-            iconUrl: '/images/marker-icon.png',
-            iconRetinaUrl: '/images/marker-icon-2x.png',
-            shadowUrl: '/images/marker-shadow.png',
-            iconSize: [25, 41],
-            iconAnchor: [12, 41],
-            popupAnchor: [1, -34],
-            shadowSize: [41, 41]
-          })}
+          icon={defaultIcon}
         >
           <Popup>
             <div>
