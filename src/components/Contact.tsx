@@ -23,7 +23,7 @@ export default function Contact() {
       const messageText = `📩 НОВОЕ СООБЩЕНИЕ С САЙТА\n\nИмя: ${name}\nEmail: ${email}\nСообщение: ${message}\n\nДата: ${new Date().toLocaleString('ru-RU')}`;
       
       const botToken = '7945508274:AAGtl6Dwjc1phTN6HoTFppHvyck9B5o5WEw';
-      const chatId = '-4733013737';
+      const chatId = '-1002648902355';
       
       const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
         method: 'POST',
