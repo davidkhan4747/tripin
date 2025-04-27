@@ -42,14 +42,12 @@ export default function Hero() {
       
       const onLoad = () => {
         setLoadedImages(prev => new Set([...prev, nextIndex]));
+        img.removeEventListener('load', onLoad); // Remove event listener to prevent memory leak
       };
       
       img.addEventListener('load', onLoad);
       img.src = images[nextIndex].src;
-      
-      return () => {
-        img.removeEventListener('load', onLoad);
-      };
+      return () => img.removeEventListener('load', onLoad); // Remove event listener when component unmounts
     }
   }, [currentImageIndex, images, loadedImages]);
 

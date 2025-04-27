@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 import { useTranslate } from '@/context/LanguageContext';
 
-export default function Contact() {
+export default function Contact({ id = 'contact' }: { id?: string }) {
   const { t } = useTranslate('contact');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -59,7 +59,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-16 bg-gray-50">
+    <section id={id} className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="text-center mb-12"
