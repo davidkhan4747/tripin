@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo } from 'react';
+import { useEffect } from 'react';
 import 'leaflet/dist/leaflet.css';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
@@ -20,6 +20,17 @@ const MarkerIcon = () => {
   return null;
 };
 
+// Create default icon once outside of component
+const defaultIcon = new L.Icon({
+  iconUrl: '/images/marker-icon.png',
+  iconRetinaUrl: '/images/marker-icon-2x.png',
+  shadowUrl: '/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
 type Location = {
   name: string;
   coordinates: [number, number];
@@ -31,17 +42,6 @@ type MapProps = {
 };
 
 export default function Map({ locations }: MapProps) {
-  // Create icon once and reuse it
-  const defaultIcon = useMemo(() => new L.Icon({
-    iconUrl: '/images/marker-icon.png',
-    iconRetinaUrl: '/images/marker-icon-2x.png',
-    shadowUrl: '/images/marker-shadow.png',
-    iconSize: [25, 41],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
-    shadowSize: [41, 41]
-  }), []);
-  
   return (
     <MapContainer 
       center={[41.3775, 64.5853]} 
