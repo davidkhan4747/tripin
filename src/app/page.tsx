@@ -8,6 +8,7 @@ import LocationMap from '@/components/LocationMap';
 import Navbar from '@/components/Navbar';
 import TopRoutes from '@/components/TopRoutes';
 import Tours from '@/components/Tours';
+import React from "react";
 
 export default function Home() {
   return (
