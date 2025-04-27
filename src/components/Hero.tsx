@@ -110,11 +110,11 @@ export default function Hero() {
 
       {/* Hero Content */}
       <div className="relative z-10 h-full flex items-center justify-center text-center px-4 sm:px-6 lg:px-8">
-        <motion.div 
-          className="max-w-3xl"
-          initial="hidden"
-          animate="visible"
-          variants={fadeIn}
+        <motion.div
+            className="max-w-3xl"
+            initial="hidden"
+            animate="visible"
+            variants={fadeIn}
         >
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-6 tracking-tight">
             {t('title')}
@@ -125,16 +125,24 @@ export default function Hero() {
 
           <div className="flex flex-wrap justify-center gap-4 mb-10">
             {Object.entries(raw('places')).map(([key, value]) => (
-              <div 
-                key={key}
-                className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full text-white border border-white/20 hover:bg-white/20 transition-all duration-300"
-              >
-                {value as string}
-              </div>
+                <div
+                    key={key}
+                    className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full text-white border border-white/20 hover:bg-white/20 transition-all duration-300"
+                >
+                  {value as string}
+                </div>
             ))}
           </div>
 
-          <button className="bg-[#672c8e] hover:bg-[#7a3ebd] text-white font-medium py-3 px-8 rounded-full transition-colors duration-300 transform hover:scale-105">
+          <button
+              className="bg-[#672c8e] hover:bg-[#7a3ebd] text-white font-medium py-3 px-8 rounded-full transition-colors duration-300 transform hover:scale-105"
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                  contactSection.scrollIntoView({behavior: 'smooth'});
+                }
+              }}
+          >
             {t('cta')}
           </button>
         </motion.div>

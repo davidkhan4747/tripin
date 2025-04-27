@@ -8,7 +8,7 @@
     "contact": "Kontaktlar"
   },
   "hero": {
-    "title": "O'zbekiston ichi sayohat qiling",
+    "title": "O’zbekiston bo’ylab sayohat qiling",
     "subtitle": "O'zbekistonning mashhur joylari",
     "places": {
       "tashkent": "Toshkent",
@@ -16,7 +16,7 @@
       "samarkand": "Samarqand",
       "khiva": "Xiva"
     },
-    "cta": "Hozir o'rganish"
+    "cta": "Hoziroq kashf eting"
   },
   "about": {
     "title": "Biz haqimizda",
