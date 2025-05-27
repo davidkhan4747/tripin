@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Footer from '@/components/Footer';
+import PaymentQR from '@/components/PaymentQR';
 
 // Динамический импорт тяжелых компонентов для уменьшения размера начального бандла
 const TopRoutes = lazy(() => import('@/components/TopRoutes'));
@@ -37,7 +38,7 @@ export default function Home() {
       <Suspense fallback={<Loading />}>
         <LocationMap />
       </Suspense>
-
+      <PaymentQR />
       <Suspense fallback={<Loading />}>
         <Contact id="contact" />
       </Suspense>
