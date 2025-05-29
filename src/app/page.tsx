@@ -38,7 +38,11 @@ export default function Home() {
       <Suspense fallback={<Loading />}>
         <LocationMap />
       </Suspense>
-      <PaymentQR />
+
+    <Suspense fallback={<Loading />}>
+        <PaymentQR />
+    </Suspense>
+
       <Suspense fallback={<Loading />}>
         <Contact id="contact" />
       </Suspense>
